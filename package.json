@@ -1,0 +1,14 @@
+{
+  "name": "jsutils",
+  "version": "1.0.0",
+  "description": "Common basic function palindrome, fibonacci, vowels-in-word",
+  "main": "index.js",
+  "author": "Miguel Herrera",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
