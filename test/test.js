@@ -16,6 +16,13 @@ describe('Palindrome', function(){
             assert.equal(result, false)
         });
     });
+    describe('There is no word', function() {
+        it('should return string when there is no word', function() {
+            var word;
+            let result = utils.prototype.palindrome(word);
+            assert.equal(result, 'introduce a word!');
+        })
+    })
 });
 
 describe('Fibonacci', function() {
