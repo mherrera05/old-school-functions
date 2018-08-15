@@ -49,10 +49,17 @@ describe('Fibonacci', function() {
 
 describe('Vowels in word', function() {
     describe('All vowels in the word', function() {
-        it('should return true is the word has all vowels', function() {
+        it('should return true if word has all vowels', function() {
             var word = 'murcielago';
             let result = utils.prototype.vowels(word);
             assert.equal(result, true);
         });
     });
+    describe('Some vowels in the word', function() {
+        it('should return false if word has some vowels', function() {
+            var word = 'december';
+            let result = utils.prototype.vowels(word);
+            assert.equal(result, false);
+        })
+    })
 });
