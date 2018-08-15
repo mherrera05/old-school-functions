@@ -35,7 +35,7 @@ class Utils {
         if (!word) {
             return 'introduce a word!';
         }
-        
+
         var vowels = ['a', 'e', 'i', 'o', 'u'];
         var splittedWord = word.split('');
 
@@ -50,6 +50,21 @@ class Utils {
             return true;
         }
         return false;
+    }
+
+    bubble(array) {
+        console.log(array);
+        for (let cycle = 0; cycle < array.length; cycle++) {
+            for (let pos = 0; pos < array.length; pos++) {
+                if (array[pos] > array[pos+1]) {
+                    var aux = array[pos+1];
+                    array[pos+1] = array[pos];
+                    array[pos] = aux;
+                }
+            }
+        }
+        console.log(array);
+        return array;
     }
 }
 

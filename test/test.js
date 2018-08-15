@@ -70,3 +70,14 @@ describe('Vowels in word', function() {
         })
     })
 });
+
+describe('Bubble ordering', function() {
+    describe('Order a numbers array', function() {
+        it('should return the highest number in the last position', function() {
+            var highest = 100;
+            var array = [highest, 15, 5, 50, 10];
+            let result = utils.prototype.bubble(array);
+            assert.equal(result[array.length-1], highest);
+        })
+    })
+})
