@@ -78,6 +78,13 @@ describe('Bubble ordering', function() {
             var array = [highest, 15, 5, 50, 10];
             let result = utils.prototype.bubble(array);
             assert.equal(result[array.length-1], highest);
+        });
+    });
+    describe('There is no array', function() {
+        it('should return string when there is no array', function() {
+            var array;
+            let result = utils.prototype.bubble(array);
+            assert. equal(result, 'introduce an number array!');
         })
     })
-})
+});

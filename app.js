@@ -53,7 +53,10 @@ class Utils {
     }
 
     bubble(array) {
-        console.log(array);
+        if (!array) {
+            return 'introduce an number array!';
+        }
+        
         for (let cycle = 0; cycle < array.length; cycle++) {
             for (let pos = 0; pos < array.length; pos++) {
                 if (array[pos] > array[pos+1]) {
@@ -63,7 +66,6 @@ class Utils {
                 }
             }
         }
-        console.log(array);
         return array;
     }
 }
