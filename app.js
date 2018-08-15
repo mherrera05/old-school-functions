@@ -21,7 +21,7 @@ class Utils {
         if (!number) {
             return 'introduce a number!';
         }
-        
+
         var array = [0, 1];
         for (let pos = 0; pos <= number; pos++) {
             if (pos > 1) {
@@ -29,6 +29,23 @@ class Utils {
             }
         }
         return array[number];
+    }
+
+    vowels(word) {
+        var vowels = ['a', 'e', 'i', 'o', 'u'];
+        var splittedWord = word.split('');
+
+        for (let pos = 0; pos < word.length; pos++) {
+            var key = vowels.indexOf(splittedWord[pos]); 
+            if (key >= 0) {
+                vowels.splice(key, 1);
+            }
+        }
+
+        if (vowels.length == 0) {
+            return true;
+        }
+        return false;
     }
 }
 
