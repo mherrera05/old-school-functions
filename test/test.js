@@ -32,5 +32,17 @@ describe('Fibonacci', function() {
             let result = utils.prototype.fibonacci(number);
             assert.equal(result, 13);
         });
+        it('should return 21 for Fibonacci of 8', function() {
+            var number = 8;
+            let result = utils.prototype.fibonacci(number);
+            assert.equal(result, 21);
+        });
     });
+    describe('There is no number', function() {
+        it('should return string when there is no number', function() {
+            var number;
+            let result = utils.prototype.fibonacci(number);
+            assert.equal(result, 'introduce a number!');
+        })
+    })
 });

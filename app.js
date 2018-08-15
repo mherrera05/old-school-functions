@@ -18,6 +18,10 @@ class Utils {
     }
 
     fibonacci(number) {
+        if (!number) {
+            return 'introduce a number!';
+        }
+        
         var array = [0, 1];
         for (let pos = 0; pos <= number; pos++) {
             if (pos > 1) {
