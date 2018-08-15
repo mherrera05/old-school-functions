@@ -5,13 +5,25 @@ describe('Palindrome', function(){
     describe('Is Palindrome', function(){
         it('should return true when word is palindrome "ana"', function() {
             var word = 'ana';
-            assert.equal(utils.prototype.palindrome(word), true)
+            let result = utils.prototype.palindrome(word);
+            assert.equal(result, true)
         });
     });
     describe('Is not Palindrome', function(){
         it('should return false when word is not palindrome "hello"', function() {
             var word = 'hello';
-            assert.equal(utils.prototype.palindrome(word), false)
+            let result = utils.prototype.palindrome(word);
+            assert.equal(result, false)
+        });
+    });
+});
+
+describe('Fibonacci', function() {
+    describe('Return Fibonacci of a number', function() {
+        it('should return 13 for Fibonacci of 7', function() {
+            var  number = 7;
+            let result = utils.prototype.fibonacci(number);
+            assert.equal(result, 13);
         });
     });
 });
