@@ -32,6 +32,10 @@ class Utils {
     }
 
     vowels(word) {
+        if (!word) {
+            return 'introduce a word!';
+        }
+        
         var vowels = ['a', 'e', 'i', 'o', 'u'];
         var splittedWord = word.split('');
 

@@ -60,6 +60,13 @@ describe('Vowels in word', function() {
             var word = 'december';
             let result = utils.prototype.vowels(word);
             assert.equal(result, false);
+        });
+    });
+    describe('There is no word', function() {
+        it('should return string if there is no word', function() {
+            var word;
+            let result = utils.prototype.vowels(word);
+            assert.equal(result, 'introduce a word!');
         })
     })
 });
