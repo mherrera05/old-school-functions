@@ -1,5 +1,5 @@
 {
-  "name": "jsutils",
+  "name": "js-utils",
   "version": "1.0.0",
   "description": "Common basic function palindrome, fibonacci, vowels-in-word",
   "main": "index.js",
