@@ -6,10 +6,13 @@
   "author": "Miguel Herrera",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha",
+    "test-coverage": "nyc --reporter=text --reporter=html mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   }
 }
