@@ -14,11 +14,11 @@ Methods:
 Add this package using `npm` or `yarn`.
 
 ```
-npm install jsutils
+npm install old-school-functions
 ```
 or
 ```
-yarn add jsutils
+yarn add old-school-functions
 ```
 
 ##### Step 2

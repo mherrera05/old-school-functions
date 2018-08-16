@@ -1,11 +1,11 @@
 {
-  "name": "js-utils",
+  "name": "old-school-functions",
   "version": "1.0.0",
   "description": "Common basic function palindrome, fibonacci, vowels-in-word",
   "main": "index.js",
   "author": "Miguel Herrera",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "^5.2.0"
   },
   "scripts": {
