@@ -29,5 +29,5 @@ var utils = require('jsutils');
 utils.palindrome(word);
 ```
 
-####Author:
+#### Author:
  * **Miguel Herrera** <migueljherrera@gmail.com>
