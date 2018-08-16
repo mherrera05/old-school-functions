@@ -4,12 +4,12 @@ class Utils {
 
     palindrome(word) {
         if (!word) {
-            return 'introduce a word!';
+            return "introduce a word!";
         }
 
         let response = true;
         for(let pos = 0; pos < word.length/2; pos ++) {
-            if(word[pos] != word[word.length-pos-1]) {
+            if(word[pos] !== word[word.length-pos-1]) {
                 response = false;
                 break;
             }
@@ -19,7 +19,7 @@ class Utils {
 
     fibonacci(number) {
         if (!number) {
-            return 'introduce a number!';
+            return "introduce a number!";
         }
 
         var array = [0, 1];
@@ -33,11 +33,11 @@ class Utils {
 
     vowels(word) {
         if (!word) {
-            return 'introduce a word!';
+            return "introduce a word!";
         }
 
-        var vowels = ['a', 'e', 'i', 'o', 'u'];
-        var splittedWord = word.split('');
+        var vowels = ["a", "e", "i", "o", "u"];
+        var splittedWord = word.split("");
 
         for (let pos = 0; pos < word.length; pos++) {
             var key = vowels.indexOf(splittedWord[pos]); 
@@ -46,7 +46,7 @@ class Utils {
             }
         }
 
-        if (vowels.length == 0) {
+        if (vowels.length === 0) {
             return true;
         }
         return false;
@@ -54,7 +54,7 @@ class Utils {
 
     bubble(array) {
         if (!array) {
-            return 'introduce an number array!';
+            return "introduce an number array!";
         }
         
         for (let cycle = 0; cycle < array.length; cycle++) {
