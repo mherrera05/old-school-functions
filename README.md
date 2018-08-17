@@ -26,7 +26,7 @@ yarn add old-school-functions
 Include this dependency in your code.
 
 ```javascript
-var functions = require('old-schools-functions');
+var functions = require('old-school-functions');
 functions.palindrome(word);
 ```
 
