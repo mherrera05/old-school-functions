@@ -1,6 +1,6 @@
 {
   "name": "old-school-functions",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Common basic function palindrome, fibonacci, vowels-in-word",
   "main": "index.js",
   "author": "Miguel Herrera",
