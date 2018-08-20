@@ -8,6 +8,7 @@ Methods:
  * Fibonacci Serie
  * Vowels in word
  * Bubble Ordering
+ * Recursive Factorial
 
 #### Usage:
 
