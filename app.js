@@ -68,6 +68,17 @@ class Utils {
         }
         return array;
     }
+
+    recursiveFactorial(number) {
+        if (isNaN(parseInt(number))) {
+            return "introduce a number!";
+        }
+
+        if (number === 0) {
+            return 1;
+        }
+        return number * this.recursiveFactorial(number - 1);
+    }
 }
 
 module.exports = Utils;

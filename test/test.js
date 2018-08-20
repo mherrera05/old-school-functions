@@ -84,7 +84,34 @@ describe("Bubble ordering", function() {
         it("should return string when there is no array", function() {
             var array;
             let result = utils.prototype.bubble(array);
-            assert. equal(result, "introduce an number array!");
+            assert.equal(result, "introduce an number array!");
+        });
+    });
+});
+
+describe("Recursive Factorial", function() {
+    describe("Factorial of a given number", function() {
+        it("should return 120 for factorial of 5", function() {
+            var number = 5;
+            let result = utils.prototype.recursiveFactorial(number);
+            assert.equal(result, 120);
+        });
+        it("should return 2 for factorial of 2", function() {
+            var number = 2;
+            let result = utils.prototype.recursiveFactorial(number);
+            assert.equal(result, 2);
+        });
+        it("should return 3628800 for factorial of 10", function() {
+            var number = 10;
+            let result = utils.prototype.recursiveFactorial(number);
+            assert.equal(result, 3628800);
+        });
+    });
+    describe("There is no number", function() {
+        it("should return string if there is no number", function() {
+            var number;
+            let result = utils.prototype.recursiveFactorial(number);
+            assert.equal(result, "introduce a number!");
         });
     });
 });
