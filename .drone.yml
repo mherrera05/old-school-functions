@@ -11,4 +11,4 @@ steps:
 - name: test
   image: node:16.10.0
   commands:
-  - npm run test
+  - npm run test-coverage
